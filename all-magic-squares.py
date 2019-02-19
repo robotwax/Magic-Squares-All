@@ -5,9 +5,9 @@ def square(a):
 		return oddsquare(a)
 	else:
 		if a % 4 == 0:
-			return 2evensquare(a)
+			return dub_evensquare(a)
 		elif a % 4 == 2:
-			return 1evensquare(a)
+			return sing_evensquare(a)
 		else:
 			return False
 
@@ -41,7 +41,7 @@ magic_square = shift5 + matrix5
 magic_square = np.rot90(magic_square, 1)
 print(magic_square)
 
-def 1evensquare(a):
+def sing_evensquare(a):
 	def odd_square(a):
 		start = np.arange(0, c1).reshape(c0, c0)
 		mod1 = start % c
@@ -108,7 +108,7 @@ def 1evensquare(a):
         return json.dump(magicsum, f)
 
 
-def 2evensquare(a):
+def dub_evensquare(a):
     z = range(1, b+1)
     c = (list(z))
     d = c[0] + c[-1]
